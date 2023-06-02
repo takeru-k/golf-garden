@@ -1,0 +1,65 @@
+@use "../setting/setting";
+
+.c-cta{
+  background: #009b6e;
+  padding: 24px 0 64px;
+  color: #fff;
+  
+  @media not all and (min-width: 768px){
+    display: none;
+  }
+}
+
+.c-cta__contents{
+  padding: 40px 0;
+  text-align: center;
+h2{
+    font-size: 28px;
+  }
+
+  p{
+    margin-top: 24px;
+  }
+}
+
+.c-cta__btn{
+  text-align: center;
+
+  span{
+    padding-left: 16px;
+  }
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  margin: 0 auto;
+  border: 1px solid #fff;
+}
+
+
+a.btn--line {
+  color: #009b6e;
+  background: #fff;
+}
+
+a.btn--line:hover {
+  color: #fff;
+  background: #009b6e;
+}

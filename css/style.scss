@@ -1,0 +1,28 @@
+@use "setting/reset";
+@use "setting/setting";
+
+@use "layout/header";
+@use "layout/inner";
+@use "layout/footer";
+@use "layout/pageHeader";
+@use "layout/spacer";
+
+@use "component/hamburger";
+@use "component/button";
+@use "component/banner";
+@use "component/flex";
+@use "component/section";
+@use "component/table";
+@use "component/box";
+@use "component/topHeading";
+@use "component/topTexts";
+@use "component/cta";
+
+@use "project/mainVisual";
+@use "project/topSimulator";
+@use "project/topInfo";
+@use "project/topCourse";
+@use "project/topGuide";
+@use "project/topRecruit";
+@use "project/simulator";
+

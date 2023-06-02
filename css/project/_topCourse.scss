@@ -1,0 +1,83 @@
+@use "../setting/setting";
+
+.p-topCourse{
+  background: url("../images/top-course.jpg")no-repeat center center/cover;
+}
+
+.p-topCourse__box{
+  background: rgba(1,53,134, 0.8);
+  color: #fff;
+  padding: 54px 32px;
+
+  h2{
+    font-size: 20px;
+    position: relative;
+
+    &:after{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: -10px;
+      width: 68px;
+      height: 1px;
+      background: #fff;
+    }
+  }
+
+  p{
+    margin-top: 24px;
+  }
+
+  a{
+    display: block;
+    border: 1px solid #fff;
+    padding: 12px;
+    text-align: center;
+    margin: 16px auto 0;
+    transition: .4s;
+
+    &:hover{
+      background: #fff;
+      color: setting.$color-main;
+    }
+  }
+}
+
+@media (min-width: 768px){
+  .p-topCourse__box{
+    width: 60%;
+    padding: 48px;
+
+    h2{
+      &:after{
+        width: 120px;
+      }
+    }
+
+    p{
+      padding-top: 8px;
+    }
+
+    a{
+      margin-top: 36px;
+      width: 200px;
+      margin-left: 0;
+    }
+  }
+}
+
+@media (min-width: 1024px){
+  .p-topCourse{
+    margin: 24px 0;
+  }
+
+  .p-topCourse__box{
+    width: 44%;
+    padding: 80px 160px 80px 80px;
+    background: rgba(1,53,134, 0.9);
+
+    h2{
+      font-size: 28px;
+    }
+  }
+}

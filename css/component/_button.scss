@@ -1,0 +1,30 @@
+@use "../setting/setting";
+
+.c-button{
+  a{
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(to right, #31619f, #03b2dd);
+    padding: 12px 16px;
+    letter-spacing: 1.6px;
+    margin: 24px auto 0;
+    font-weight: bold;
+    display: block;
+    transition: .4s;
+
+    @media (min-width: 768px){
+      width: 200px;
+      margin-left: 0;
+    }
+
+    &:hover{
+      opacity: .7;
+    }
+  }
+}
+
+@media (min-width: 1024px){
+  .c-button{
+    padding-top: 8px;
+  }
+}
